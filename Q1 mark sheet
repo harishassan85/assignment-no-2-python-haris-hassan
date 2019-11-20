@@ -1,0 +1,153 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the marks of English     : 88\n",
+      "Enter the marks of Urdu        : 77\n",
+      "Enter the marks of Islamiat    : 65\n",
+      "Enter the marks of Mathematics : 77\n",
+      "Enter the marks of Sindhi      : 88\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "English marks        = 88 Grade = A+\n",
+      "Urdu marks           = 77 Grade = A\n",
+      "Islamiat marks       = 65 Grade = B\n",
+      "Mathematics marks    = 77 Grade = A\n",
+      "sindhi marks         = 88 Grade = A+\n",
+      "-------Total Marks-------\n",
+      "Total marks in all subjects = 395\n",
+      "Percentage in all subjects  = 79.0\n",
+      "----------Grade----------\n",
+      "Grade = A\n",
+      "---------Thank you---------\n"
+     ]
+    }
+   ],
+   "source": [
+    "eng=int(input(\"Enter the marks of English     :\"))\n",
+    "urd=int(input(\"Enter the marks of Urdu        :\"))\n",
+    "isl=int(input(\"Enter the marks of Islamiat    :\"))\n",
+    "mat=int(input(\"Enter the marks of Mathematics :\"))\n",
+    "sin=int(input(\"Enter the marks of Sindhi      :\"))\n",
+    "per=eng+urd+isl+sin+mat\n",
+    "person=(per/500)*100\n",
+    "if eng>=80:\n",
+    "    print(\"English marks        =\",eng, \"Grade = A+\")\n",
+    "if eng>=70 and eng<=79:\n",
+    "    print(\"English marks        =\",eng, \"Grade = A\")\n",
+    "if eng>=60 and eng<=69:\n",
+    "    print(\"English marks        =\",eng, \"Grade = B\")\n",
+    "if eng>=50 and eng<=59:\n",
+    "    print(\"English marks        =\",eng, \"Grade = C\")\n",
+    "if eng>=40 and eng<=49:\n",
+    "    print(\"English marks        =\",eng, \"Grade = D\")\n",
+    "if eng<40:\n",
+    "    print(\"English marks        =\",eng, \"Grade = F\")\n",
+    "if urd>=80:\n",
+    "    print(\"Urdu marks           =\",urd, \"Grade = A+\")\n",
+    "if urd>=70 and urd<=79:\n",
+    "    print(\"Urdu marks           =\",urd, \"Grade = A\")\n",
+    "if urd>=60 and urd<=69:\n",
+    "    print(\"Urdu marks           =\",urd, \"Grade = B\")\n",
+    "if urd>=50 and urd<=59:\n",
+    "    print(\"Urdu marks           =\",urd, \"Grade = C\")\n",
+    "if urd>=40 and urd<=49:\n",
+    "    print(\"Urdu marks           =\",urd, \"Grade = D\")\n",
+    "if urd<40:\n",
+    "    print(\"Urdu marks           =\",urd, \"Grade = F\")\n",
+    "if isl>=80:\n",
+    "    print(\"Islamiat marks       =\",isl, \"Grade = A+\")\n",
+    "if isl>=70 and isl<=79:\n",
+    "    print(\"Islamiat marks       =\",isl, \"Grade = A\")\n",
+    "if isl>=60 and isl<=69:\n",
+    "    print(\"Islamiat marks       =\",isl, \"Grade = B\")\n",
+    "if isl>=50 and isl<=59:\n",
+    "    print(\"Islamiat marks       =\",isl, \"Grade = C\")\n",
+    "if isl>=40 and isl<=49:\n",
+    "    print(\"Islamiat marks       =\",isl, \"Grade = D\")\n",
+    "if isl<40:\n",
+    "    print(\"Islamiat marks       =\",isl, \"Grade = F\")\n",
+    "if mat>=80:\n",
+    "    print(\"Mathematics marks    =\",mat, \"Grade = A+\")\n",
+    "if mat>=70 and mat<=79:\n",
+    "    print(\"Mathematics marks    =\",mat, \"Grade = A\")\n",
+    "if mat>=60 and mat<=69:\n",
+    "    print(\"Mathematics marks    =\",mat, \"Grade = B\")\n",
+    "if mat>=50 and mat<=59:\n",
+    "    print(\"Mathematics marks    =\",mat, \"Grade = C\")\n",
+    "if mat>=40 and mat<=49:\n",
+    "    print(\"Mathematics marks    =\",mat, \"Grade = D\")\n",
+    "if mat<40:\n",
+    "    print(\"Mathematics marks    =\",mat, \"Grade = F\")\n",
+    "if sin>=80:\n",
+    "    print(\"sindhi marks         =\",sin, \"Grade = A+\")\n",
+    "if sin>=70 and sin<=79:\n",
+    "    print(\"Sindhi marks         =\",sin, \"Grade = A\")\n",
+    "if sin>=60 and sin<=69:\n",
+    "    print(\"Sindhi marks         =\",sin, \"Grade = B\")\n",
+    "if sin>=50 and sin<=59:\n",
+    "    print(\"Sindhi marks         =\",sin, \"Grade = C\")\n",
+    "if sin>=40 and sin<=49:\n",
+    "    print(\"Sindhi marks         =\",sin, \"Grade = D\")\n",
+    "if sin<40:\n",
+    "    print(\"Sindhi marks         =\",sin, \"Grade = F\")   \n",
+    "print(\"-------Total Marks-------\")\n",
+    "print(\"Total marks in all subjects =\",per)\n",
+    "print(\"Percentage in all subjects  =\",person)\n",
+    "print(\"----------Grade----------\")\n",
+    "if person>=80:\n",
+    "    print(\"Grade = A+\")\n",
+    "if person>=70 and person<=79:\n",
+    "    print(\"Grade = A\")\n",
+    "if person>=60 and person<=69:\n",
+    "    print(\"Grade = B\")\n",
+    "if person>=50 and person<=59:\n",
+    "    print(\"Grade = C\")\n",
+    "if person>=40 and person<=49:\n",
+    "    print(\"Grade = D\")\n",
+    "if person<40:\n",
+    "    print(\"Grade = F\")\n",
+    "print(\"---------Thank you---------\")    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
